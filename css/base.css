@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑", "宋体", "黑体";
+  background: url(../images/background.jpg);
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #555251;
+  border: 1px solid #474645;
+  color: #fff;
+  padding: 0 0 0 20px;
+  min-width: 600px;
+  margin-bottom: 15px;
+}
+.header .top-left {
+  float: left;
+  width: 342px;
+}
+.header .top-left h1 {
+  font-size: 24px;
+  background: url(../images/icons.png) 0 -110px no-repeat;
+  padding-left: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 2px;
+  width: 342px;
+}
+.header .top-left h1 .small {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.header .top-right {
+  float: right;
+}
+.header .top-right li {
+  float: left;
+}
+.header .top-right li a {
+  display: block;
+  height: 48px;
+  line-height: 45px;
+  font-size: 18px;
+  text-align: center;
+  border-left: 1px solid #484544;
+  cursor: pointer;
+  min-width: 70px;
+  color: #fff;
+}
+.header .top-right li a:hover {
+  background-color: #484544;
+  color: orange;
+}
+.header .top-right li .active {
+  background-color: #484544;
+  color: orange;
+}
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.showPage {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 600px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px 3px #ddd;
+}
+.showPage .pages {
+  background-color: #fff;
+}
+.showPage .siderContent {
+  width: 22%;
+  background: url(../images/siderbg.jpg);
+  opacity: 0.8;
+  float: left;
+  height: 100%;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.showPage .siderContent h2 {
+  color: #002776;
+  text-align: center;
+}
+.showPage .siderContent h2 .current {
+  font-size: 28px;
+}
+.showPage .imageItem {
+  padding: 30px 0;
+  width: 78%;
+  float: right;
+}
+.showPage .imageItem img {
+  max-width: 95%;
+  width: 90;
+  max-height: 95%;
+  display: block;
+  margin: 0 auto;
+}

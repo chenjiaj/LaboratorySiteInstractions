@@ -1,0 +1,134 @@
+//chenjiajun
+//2014/09/02
+  
+//reset.css
+*{
+	padding: 0;
+	margin: 0;
+	border:0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+//set all page
+body{
+	font-size: 14px;
+	font-family: "微软雅黑","宋体","黑体";
+	background: url(../images/background.jpg);
+}
+html{
+	//overflow: hidden;
+}
+//var 
+@minWidth : 600px;
+
+//header
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: #555251;
+	border: 1px solid #474645;
+	color:#fff;
+	padding: 0 0 0 20px;
+	min-width: @minWidth;
+	.top-left{
+		float: left;
+		width:342px;
+		h1{
+		font-size: 24px;
+		background: url(../images/icons.png) 0 -110px no-repeat;
+		padding-left: 40px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 2px;
+		width:342px;
+			.small{
+				font-size: 20px;
+				margin-left: 10px;
+			}//small end
+		}//h1 end
+	}//top-left end
+
+	.top-right{
+		float: right;
+		li{
+			float: left;			
+			a{
+				display: block;
+				height: 48px;
+				line-height: 45px;
+				font-size: 18px;
+				text-align: center;
+				border-left: 1px solid #484544;
+				cursor: pointer;
+				min-width: 70px;
+				color:#fff;
+				&:hover{
+				background-color:#484544;
+				color:orange;
+			}
+			}
+			.active{
+				background-color:#484544;
+				color:orange;
+			}
+		}
+	}//top-right end
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	margin-bottom: 15px;
+}//header end
+
+//pages
+
+.showPage{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 80%;
+	min-width: @minWidth;
+	.pages{
+	background-color: #fff;
+	
+	}//pages end
+	.page{
+	}//page end
+	border:1px solid #ccc;
+	box-shadow: 0 0 3px 3px #ddd;
+	.siderContent{
+		width: 22%;
+		background: url(../images/siderbg.jpg);
+		opacity: 0.8;
+		float: left;
+		height: 100%;
+		border:1px solid #fff;
+		padding: 20px;
+		h2{
+			color:#002776;
+			text-align: center;
+			.current{
+				font-size: 28px;
+			}// current end
+		}//h2 end
+		
+	}//siderContent end
+	.imageItem{
+		padding: 30px 0;
+		width: 78%;
+		float: right;
+		img{
+			max-width: 95%;
+			width: 90;
+			max-height: 95%;
+			display: block;
+			margin: 0 auto;
+		}
+	}//imageItem end
+}// showPage end
